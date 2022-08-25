@@ -2,7 +2,7 @@
   
     
         "post0": {
-            "title": "Title",
+            "title": "Python Usage 'Hello World'",
             "content": "msg = &quot;Hello World&quot; print(msg) . Hello World .",
             "url": "https://lindaliu1202.github.io/lindaliu_blog/2022/08/25/python.html",
             "relUrl": "/2022/08/25/python.html",

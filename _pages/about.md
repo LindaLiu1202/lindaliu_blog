@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me - Linda Liu
+title: About Me
 permalink: /about/
 ---
 

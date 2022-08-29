@@ -3,9 +3,9 @@
     
         "post0": {
             "title": "Installation Check",
-            "content": "python --version . Python 3.9.12 . anaconda --version . anaconda Command line client (version 1.9.0) . brew --version . Homebrew 3.5.10 Homebrew/homebrew-core (git revision fa385accb12; last commit 2022-08-24) . conda --version jupyter kernelspec list # list installed kernels . conda 4.13.0 Available kernels: bash /Users/lin/Library/Jupyter/kernels/bash java /Users/lin/Library/Jupyter/kernels/java javascript /Users/lin/Library/Jupyter/kernels/javascript python3 /Users/lin/opt/anaconda3/share/jupyter/kernels/python3 . bash --version jupyter kernelspec list # list kernels . GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin21) Copyright (C) 2007 Free Software Foundation, Inc. . npm -version # node package manager comes with nodejs jupyter kernelspec list # list kernels . 6.4.1 Available kernels: bash /Users/lin/Library/Jupyter/kernels/bash java /Users/lin/Library/Jupyter/kernels/java javascript /Users/lin/Library/Jupyter/kernels/javascript python3 /Users/lin/opt/anaconda3/share/jupyter/kernels/python3 . jupyter kernelspec list # list kernels . Available kernels: bash /Users/lin/Library/Jupyter/kernels/bash java /Users/lin/Library/Jupyter/kernels/java javascript /Users/lin/Library/Jupyter/kernels/javascript python3 /Users/lin/opt/anaconda3/share/jupyter/kernels/python3 . java --version .",
-            "url": "https://lindaliu1202.github.io/lindaliu_blog/2022/08/28/installation_check.html",
-            "relUrl": "/2022/08/28/installation_check.html",
+            "content": "Python Installed . python --version . Python 3.9.12 . python2 --version . Python 2.7.18 . python3 --version . Python 3.9.12 . Anaconda Installed . anaconda --version . anaconda Command line client (version 1.9.0) . conda info . active environment : base active env location : /Users/lin/opt/anaconda3 shell level : 1 user config file : /Users/lin/.condarc populated config files : conda version : 4.13.0 conda-build version : 3.21.8 python version : 3.9.12.final.0 virtual packages : __osx=10.16=0 __unix=0=0 __archspec=1=x86_64 base environment : /Users/lin/opt/anaconda3 (writable) conda av data dir : /Users/lin/opt/anaconda3/etc/conda conda av metadata url : None channel URLs : https://repo.anaconda.com/pkgs/main/osx-64 https://repo.anaconda.com/pkgs/main/noarch https://repo.anaconda.com/pkgs/r/osx-64 https://repo.anaconda.com/pkgs/r/noarch package cache : /Users/lin/opt/anaconda3/pkgs /Users/lin/.conda/pkgs envs directories : /Users/lin/opt/anaconda3/envs /Users/lin/.conda/envs platform : osx-64 user-agent : conda/4.13.0 requests/2.27.1 CPython/3.9.12 Darwin/21.5.0 OSX/10.16 UID:GID : 501:20 netrc file : None offline mode : False . Homebrew Installed . brew --version . Homebrew 3.5.10 Homebrew/homebrew-core (git revision fa385accb12; last commit 2022-08-24) . Jupyter Installed and Check Kernels . conda --version jupyter kernelspec list # list installed kernels . conda 4.13.0 Available kernels: bash /Users/lin/Library/Jupyter/kernels/bash java /Users/lin/Library/Jupyter/kernels/java javascript /Users/lin/Library/Jupyter/kernels/javascript python3 /Users/lin/opt/anaconda3/share/jupyter/kernels/python3 . Bash Kernel Installed . bash --version jupyter kernelspec list # list kernels . GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin21) Copyright (C) 2007 Free Software Foundation, Inc. . npm -version # node package manager comes with nodejs jupyter kernelspec list # list kernels . 6.4.1 Available kernels: bash /Users/lin/Library/Jupyter/kernels/bash java /Users/lin/Library/Jupyter/kernels/java javascript /Users/lin/Library/Jupyter/kernels/javascript python3 /Users/lin/opt/anaconda3/share/jupyter/kernels/python3 . Java Kernel Installed . jupyter kernelspec list # list kernels . Available kernels: bash /Users/lin/Library/Jupyter/kernels/bash java /Users/lin/Library/Jupyter/kernels/java javascript /Users/lin/Library/Jupyter/kernels/javascript python3 /Users/lin/opt/anaconda3/share/jupyter/kernels/python3 . Java Installed . java --version . openjdk 17.0.4 2022-07-19 OpenJDK Runtime Environment Temurin-17.0.4+8 (build 17.0.4+8) OpenJDK 64-Bit Server VM Temurin-17.0.4+8 (build 17.0.4+8, mixed mode) .",
+            "url": "https://lindaliu1202.github.io/lindaliu_blog/jupyter/2022/08/28/installation_check.html",
+            "relUrl": "/jupyter/2022/08/28/installation_check.html",
             "date": " • Aug 28, 2022"
         }
         
@@ -15,8 +15,8 @@
         ,"post1": {
             "title": "Python Usage 'Hello World'",
             "content": "msg = &quot;Hello World&quot; print(msg) . Hello World .",
-            "url": "https://lindaliu1202.github.io/lindaliu_blog/2022/08/25/python.html",
-            "relUrl": "/2022/08/25/python.html",
+            "url": "https://lindaliu1202.github.io/lindaliu_blog/jupyter/2022/08/25/python.html",
+            "relUrl": "/jupyter/2022/08/25/python.html",
             "date": " • Aug 25, 2022"
         }
         
@@ -26,8 +26,8 @@
         ,"post2": {
             "title": "Java Usage 'Hello World'",
             "content": "// Define Static Method within a Class public class HelloStatic { // Java standard runtime entry point public static void main(String[] args) { System.out.println(&quot;Hello World!&quot;); } } // A method call allows us to execute code that is wrapped in Class HelloStatic.main(null); // Class prefix allows reference of Static Method . Hello World! .",
-            "url": "https://lindaliu1202.github.io/lindaliu_blog/2022/08/25/java.html",
-            "relUrl": "/2022/08/25/java.html",
+            "url": "https://lindaliu1202.github.io/lindaliu_blog/jupyter/2022/08/25/java.html",
+            "relUrl": "/jupyter/2022/08/25/java.html",
             "date": " • Aug 25, 2022"
         }
         

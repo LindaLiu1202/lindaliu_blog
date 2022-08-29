@@ -6,13 +6,7 @@ permalink: /vocab/
 
 #### (from Code.org)
 
----
-
-#### Table of contents
-
-1. [Lesson 1 to 5](## Lesson 1 to 5)
-
-    
+---   
 
 ## Lesson 1 to 5
 

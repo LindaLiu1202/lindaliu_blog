@@ -4,7 +4,6 @@ title: Vocab
 permalink: /vocab/
 ---
 
-# Vocab 
 #### (from Code.org)
 
 ---

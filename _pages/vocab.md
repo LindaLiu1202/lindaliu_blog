@@ -46,7 +46,7 @@ permalink: /vocab/
 
 
 
-## lesson 6
+## Lesson 6
 
 | Vocab | Definition |
 |-|-|

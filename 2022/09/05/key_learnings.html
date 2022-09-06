@@ -584,6 +584,23 @@ can't run the code if there is { after else</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Update:</p>
+<p>public void moveSouth() {
+    while (canMove("south")) {
+      if (!isFacingSouth()){
+        turnRight();
+      }
+      else {
+        move();
+    }
+   }
+  }</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Lesson-11">Lesson 11<a class="anchor-link" href="#Lesson-11"> </a></h2><ul>
 <li>concatenation - joining two strings together</li>
 </ul>

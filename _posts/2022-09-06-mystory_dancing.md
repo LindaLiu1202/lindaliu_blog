@@ -5,6 +5,9 @@ categories: [markdown]
 title: My Story with Dancing
 ---
 
+Hi!! Welcome! :) This is my story with dancing...
+<br>
+<br>
 My dance journey began when I was in a kindergarten in China. The first dance I learned was Latin dance and I took dance classes for many years and participated in several competitions and performances.
 <br>
 <br>

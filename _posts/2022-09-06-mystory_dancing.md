@@ -2,7 +2,7 @@
 toc: true
 layout: post
 categories: [markdown]
-title: Markdown Page
+title: My Story with Dancing
 ---
 
 # My Story with Dancing

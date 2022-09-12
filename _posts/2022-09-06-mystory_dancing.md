@@ -37,12 +37,25 @@ However, unexpectedly, in 2018, when I became a sixth grader, I came to the U.S.
 <br>
 <br>
 In 10th grade, I transferred to Del Norte. The summer before I transferred, my mom and I found a teacher who started a Kpop dance class, so I started going to that class and I loved it. The funny thing is that in my first Kpop dance class, we learned How You Like That by BLACKPINK and I ended up going home and not feeling my legs until the next day and I couldn't move my legs because I hadn't really danced in a long time. I am still taking the class until now, but I still want to try other dances such as HipHop dance or contemporary dance. I went to a HipHop dance camp this summer and it was intense but also fun at the same time because I found it challenging.
+
 <br>
+<br>
+
+![IMG_0634](https://user-images.githubusercontent.com/89223976/189723865-2760610e-024c-4db4-861e-382953c191e0.jpg)
+
 <br>
 In fact, I've always wanted to make videos, whether it's dance videos, singing videos or vlogs, but I haven't really made the decision to start making them because I always feel like I'm not ready. This summer, I started making dance cover videos and posting them on YouTube and Bilibili! 
 <br>
 [link to my YouTube channel](https://www.youtube.com/channel/UClMECBRPi-WsOoj-UpeJBIQ) 
 <br>
+<br>
+
+![IMG_8508](https://user-images.githubusercontent.com/89223976/189724605-da1f43a5-724e-40a5-bb4d-8e2170977f8c.JPG)
+
+![IMG_0876](https://user-images.githubusercontent.com/89223976/189724609-fe01d86b-a83a-48c1-93c0-af61a996f7b0.JPG)
+
+![IMG_0612](https://user-images.githubusercontent.com/89223976/189724602-0a670106-75fc-450c-97c8-3379d186b28d.jpg)
+
 <br>
 I've had the idea since 10th grade to create a Kpop dance club because I want to find a group of people who also like Kpop dance and that we can make dance cover videos together, and I have made up my mind to actually create this club this year. However, due to some reasons and conflicts, a Kpop dance club was created before me, so I couldn't create the Kpop dance club I always wanted to create. But I still want to try, so now I am applying to create an Asian pop culture club where we can make singing and dancing videos of Kpop, Cpop, Jpop, etc, which I think it's better than just a Kpop dance club because now I can do other types of dance from different Asian countries and not only dance but also sing, so now there are more options! 
 <br>

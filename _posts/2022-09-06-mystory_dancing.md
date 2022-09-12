@@ -24,3 +24,8 @@ I've had the idea since 10th grade to create a Kpop dance club because I want to
 <br>
 <br>
 My story with dance is still continuing and I'm looking forward to trying more types of dance in the future!
+
+<br><br>
+
+Newest Dance Cover Video on my YouTube Channel:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nPUMdzx6ZwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

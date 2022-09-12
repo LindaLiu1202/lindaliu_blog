@@ -3,10 +3,10 @@ toc: true
 layout: post
 description: “Psychology and the Good Life” & Gratitude List & Goals
 categories: [markdown]
-title: “Psychology and the Good Life” 
+title: Focus and Habits
 ---
 
-# “Psychology and the Good Life” 
+## “Psychology and the Good Life” 
 
  - It's nothing if you only know the good psychology and the good life without taking actions.
  - Exercise and sleep are important to maintain a good psychology and good life, and it is important to put them in actions.

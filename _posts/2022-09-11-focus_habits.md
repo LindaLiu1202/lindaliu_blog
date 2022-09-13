@@ -6,6 +6,7 @@ categories: [markdown]
 title: Focus and Habits
 ---
 
+
 ## “Psychology and the Good Life” 
 
  - It's nothing if you only know the good psychology and the good life without taking actions.
@@ -32,9 +33,9 @@ title: Focus and Habits
  
   - In order to get enough sleep and exercise to maintain a healthy and good life
     - Goal 1 - go to sleep at 12am everyday
-    - Goal 2 - learn a new dance every weekened
+    - Goal 2 - learn a new dance every weekend
     
-    - I would be a more happy person after acheving and maintaining these goals because my mom usually would be mad at me if I stayed up really late, and also staying up late is making me sleepy during classes, which is not a good thing.
+    - I would be a more happy person after acheving and maintaining these goals because my mom usually would be mad at me if I stayed up really late, and also staying up late is making me sleepy during classes and is bad for my health.
      
      
  

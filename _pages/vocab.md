@@ -8,7 +8,6 @@ permalink: /vocab/
 
 ---   
 
-## Lesson 1 to 5
 
 | Vocab | Definition |
 |-|-|
@@ -43,18 +42,15 @@ permalink: /vocab/
 | conditional statement | a statement that only executes when a condition is true |
 | logic error | an error that occurs when the code runs but does not do what was expected |
 | return |  to exit a method and go back to the point in the program that called it with the requested value or information |
-
-
-
-## Lesson 6
-
-| Vocab | Definition |
-|-|-|
 | super keyword | a keyword used to refer to the superclass |
 | constructor signature | the first line of the constructor which includes the public keyword, the constructor name, and the values to specify when an object is created |
 | inheritance | an object-oriented programming principle where a subclass inherits the attributes and behaviors of a superclass |
 | subclass | a class that extends a superclass and inherits its attributes and behaviors |
 | superclass | a class that can be extended to create subclasses |
+
+
+| Vocab | Definition |
+|-|-|
 |  |  |
 |  |  |
 |  |  |

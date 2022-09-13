@@ -28,8 +28,9 @@ title: Focus and Habits
  Especially, I want to thank my mom for supporting me in studying and helping me when I encountered problems. 
  I also want to thank my friend Ally for supporting me when I got into the drama/conflict last time, and I learned a lot from her. 
  
+ <br>
  
- #### Goals
+### Goals
  
   - In order to get enough sleep and exercise to maintain a healthy and good life
     - Goal 1 - go to sleep at 12am everyday

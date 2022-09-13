@@ -12,7 +12,8 @@ title: Focus and Habits
  - Exercise and sleep are important to maintain a good psychology and good life, and it is important to put them in actions.
    - I personally lack exercise and sleep because of procrastination. 
    
- ## Gratitude List
+
+## Gratitude List
  
   - my family
     - my mom

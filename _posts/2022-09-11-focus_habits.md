@@ -1,5 +1,4 @@
 ---
-toc: true
 layout: post
 description: “Psychology and the Good Life” & Gratitude List & Goals
 categories: [markdown]

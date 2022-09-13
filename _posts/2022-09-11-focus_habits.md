@@ -13,7 +13,7 @@ title: Focus and Habits
    - I personally lack exercise and sleep because of procrastination. 
    
 
-## Gratitude List
+### Gratitude List
  
   - my family
     - my mom
@@ -29,7 +29,7 @@ title: Focus and Habits
  I also want to thank my friend Ally for supporting me when I got into the drama/conflict last time, and I learned a lot from her. 
  
  
- ## Goals
+ ### Goals
  
   - In order to get enough sleep and exercise to maintain a healthy and good life
     - Goal 1 - go to sleep at 12am everyday

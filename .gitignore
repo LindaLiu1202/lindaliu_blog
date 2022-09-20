@@ -12,3 +12,15 @@ _notebooks/.ipynb_checkpoints
 .netlify
 .tweet-cache
 __pycache__
+_posts/2022-09-05-key_learnings.md
+_posts/2022-08-29-primitives.md
+_posts/2022-08-28-installation_check.md
+_posts/2022-08-25-python.md
+_posts/2022-08-25-java.md
+_posts/2020-02-20-test.md
+images/copied_from_nb/my_icons/fastai_logo.png
+settings.ini
+.gitignore
+Gemfile.lock
+_posts/2022-09-14-iteration_2dArray.md
+_posts/2022-09-15-frq1.md

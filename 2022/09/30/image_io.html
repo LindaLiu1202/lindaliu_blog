@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -192,6 +192,47 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p>The java.awt.Image class is the superclass that represents graphical images as rectangular arrays of pixels.</p>
+</li>
+<li><p>The java.awt.image.BufferedImage class, which extends the Image class to allow the application to operate directly with image data (for example, retrieving or setting up the pixel color). Applications can directly construct instances of this class.</p>
+</li>
+<li><p>The BufferedImage class is a cornerstone of the Java 2D immediate-mode imaging API. It manages the image in memory and provides methods for storing, interpreting, and obtaining pixel data. Since BufferedImage is a subclass of Image it can be rendered by the Graphics and Graphics2D methods that accept an Image parameter.</p>
+</li>
+<li><p>A BufferedImage is essentially an Image with an accessible data buffer. It is therefore more efficient to work directly with BufferedImage. A BufferedImage has a ColorModel and a Raster of image data. The ColorModel provides a color interpretation of the image's pixel data.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reading/Loading an Image</p>
+<ul>
+<li><p>Java 2D supports loading these external image formats into its BufferedImage format using its Image I/O API which is in the javax.imageio package. Image I/O has built-in support for GIF, PNG, JPEG, BMP, and WBMP. Image I/O is also extensible so that developers or administrators can "plug-in" support for additional formats. For example, plug-ins for TIFF and JPEG 2000 are separately available.</p>
+</li>
+<li><p>To load an image from a specific file use the following code, which is from LoadImageApp.java:</p>
+<p>BufferedImage img = null;</p>
+<p>try {</p>
+
+<pre><code>img = ImageIO.read(new File("strawberry.jpg"));
+
+</code></pre>
+<p>} catch (IOException e) {</p>
+<p>}</p>
+</li>
+<li><p>Image I/O recognises the contents of the file as a JPEG format image, and decodes it into a BufferedImage which can be directly used by Java 2D.</p>
+</li>
+<li><p>LoadImageApp.java shows how to display this image.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Image-Scaling-and-ASCII-Conversion">Image Scaling and ASCII Conversion<a class="anchor-link" href="#Image-Scaling-and-ASCII-Conversion"> </a></h2><p>In this example we print out a row of text for each row in the image. However, it seems as if the image is too tall. To address this problem, try to output a single character per block of pixels. In particular, average the grayscale values in a rectangular block that’s twice as tall as it is wide, and print out a single character for this block.</p>

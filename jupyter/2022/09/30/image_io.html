@@ -125,7 +125,12 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#Saving-PNG-to-GIF">Saving PNG to GIF </a></li>
-<li class="toc-entry toc-h2"><a href="#Image-Scaling-and-ASCII-Conversion">Image Scaling and ASCII Conversion </a></li>
+<li class="toc-entry toc-h2"><a href="#Image-Scaling-and-ASCII-Conversion">Image Scaling and ASCII Conversion </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Problem:">Problem: </a></li>
+<li class="toc-entry toc-h4"><a href="#Problem:">Problem: </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h1"><a href="#Hacks">Hacks </a></li>
 </ul><!--
 #################################################
@@ -242,7 +247,6 @@ window.onload = wrap_img;
 <p>try {</p>
 
 <pre><code>img = ImageIO.read(new File("strawberry.jpg"));
-
 </code></pre>
 <p>} catch (IOException e) {</p>
 <p>}</p>
@@ -544,8 +548,10 @@ Scaled: 10497 100x87  ../images/tmp/pumpkin.png
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Problem:
-don't know what's wrong with the .setRGB()</p>
+<h4 id="Problem:">
+<a class="anchor" href="#Problem:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Problem:<a class="anchor-link" href="#Problem:"> </a>
+</h4>
+<p>don't know what's wrong with the .setRGB()</p>
 <p>(output)
 |                       greyscaleImg.setRGB((int)(j), (int)(i), (int)(newColor.getRGB()));
 cannot find symbol
@@ -561,7 +567,9 @@ to
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Problem:</p>
+<h4 id="Problem:">
+<a class="anchor" href="#Problem:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Problem:<a class="anchor-link" href="#Problem:"> </a>
+</h4>
 <p>(output)
 Original: 499298 389x413  ../images/MonaLisa.png
 Scaled: 55625 128x136  ../images/tmp/greyscale/MonaLisa.png</p>

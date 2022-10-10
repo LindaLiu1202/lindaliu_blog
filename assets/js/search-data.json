@@ -3,9 +3,9 @@
     
         "post0": {
             "title": "Docker Diagram",
-            "content": "Mindmap about Docker . what are docker image | docker container | port mapping | docker-compose | dockerfile | . | . . Some resources that I used: . https://nighthawkcoders.github.io/APCSA//techtalk/deploy | https://aws.amazon.com/docker/ | https://www.geeksforgeeks.org/difference-between-docker-image-and-container/ | https://www.youtube.com/watch?v=8vyMVzRBPdI&amp;t=113s | https://shivam1410.medium.com/dockerfile-and-docker-compose-d1bff2de4bf3 | . . . Process of making the Docker diagram with Divya . . . . . .",
-            "url": "https://lindaliu1202.github.io/lindaliu_blog/2022/10/08/dockerDiagram.html",
-            "relUrl": "/2022/10/08/dockerDiagram.html",
+            "content": "Mindmap about Docker . what are docker image | docker container | port mapping | docker-compose | dockerfile | . | . . Some resources that I used: . https://nighthawkcoders.github.io/APCSA//techtalk/deploy | https://aws.amazon.com/docker/ | https://www.geeksforgeeks.org/difference-between-docker-image-and-container/ | https://www.youtube.com/watch?v=8vyMVzRBPdI&amp;t=113s | https://shivam1410.medium.com/dockerfile-and-docker-compose-d1bff2de4bf3 | . . . Process of making the Docker diagram with Divya . . . . . Final Diagram: . .",
+            "url": "https://lindaliu1202.github.io/lindaliu_blog/jupyter/2022/10/08/dockerDiagram.html",
+            "relUrl": "/jupyter/2022/10/08/dockerDiagram.html",
             "date": " • Oct 8, 2022"
         }
         

@@ -171,8 +171,8 @@ window.onload = wrap_img;
         <span class="o">+</span> <span class="s">&quot;(a)0\n(B)2\n(c)3\n&quot;</span> <span class="p">;</span> 
         
         <span class="n">Question</span> <span class="o">[]</span> <span class="n">questions</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1">//create an array of question</span>
-            <span class="k">new</span> <span class="n">Question</span><span class="p">(</span><span class="n">q1</span><span class="p">,</span> <span class="s">&quot;a&quot;</span><span class="p">),</span>  <span class="c1">//q1 - prompt; a - answer</span>
-            <span class="k">new</span> <span class="n">Question</span><span class="p">(</span><span class="n">q2</span><span class="p">,</span> <span class="s">&quot;b&quot;</span><span class="p">)</span>
+            <span class="k">new</span> <span class="n">Question</span><span class="p">(</span><span class="n">q1</span><span class="p">,</span> <span class="s">&quot;b&quot;</span><span class="p">),</span>  <span class="c1">//q1 - prompt; a - answer</span>
+            <span class="k">new</span> <span class="n">Question</span><span class="p">(</span><span class="n">q2</span><span class="p">,</span> <span class="s">&quot;c&quot;</span><span class="p">)</span>
         <span class="p">};</span>
         <span class="n">takeTest</span><span class="p">(</span><span class="n">questions</span><span class="p">);</span> <span class="c1">//call the method</span>
         
@@ -197,6 +197,11 @@ window.onload = wrap_img;
     <span class="p">}</span>
 <span class="p">}</span>
 
+    <span class="c1">// Static driver/tester method</span>
+    <span class="kd">static</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>  <span class="p">{</span>  
+        <span class="k">new</span> <span class="n">App</span><span class="p">();</span> <span class="c1">// starting App object</span>
+    <span class="p">}</span>
+
 <span class="n">App</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
@@ -215,7 +220,24 @@ window.onload = wrap_img;
 (B)2
 (c)3
 
+What is 2+1?
+(a)0
+(B)2
+(c)3
+
 </pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2</span>
+<span class="ansi-red-intense-fg ansi-bold">	at App.takeTest(#14:25)</span>
+<span class="ansi-red-intense-fg ansi-bold">	at App.main(#14:15)</span>
+<span class="ansi-red-intense-fg ansi-bold">	at .(#16:1)</span></pre>
 </div>
 </div>
 

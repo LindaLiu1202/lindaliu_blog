@@ -215,6 +215,22 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    </span><span class="ansi-black-intense-fg ansi-bold">...</span>
+<span class="ansi-red-intense-fg ansi-bold">illegal start of expression</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -390,6 +406,16 @@ Would you like to continue:
 
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
 
+    <span class="kt">int</span> <span class="n">profit</span> <span class="o">=</span> <span class="mi">5450000</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+        <span class="k">while</span><span class="p">(</span> <span class="n">profit</span> <span class="o">&lt;</span> <span class="mi">30000000</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">profit</span> <span class="o">+=</span> <span class="n">profit</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mf">0.05</span> <span class="o">*</span> <span class="n">i</span><span class="p">);</span>
+            <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+
+        <span class="p">}</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+
     <span class="p">}</span>
 <span class="p">}</span>
 
@@ -539,6 +565,9 @@ Would you like to continue:
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ForLoops</span> <span class="p">{</span>
 
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">15</span><span class="p">;</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+        <span class="p">}</span>
 
     <span class="p">}</span>
 <span class="p">}</span>
@@ -1163,6 +1192,14 @@ y
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>attempt</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -1170,10 +1207,31 @@ y
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">numbers</span><span class="o">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">12</span><span class="p">}</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">numbers</span><span class="o">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">12</span><span class="p">};</span>
+
+<span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">num</span><span class="p">:</span> <span class="n">numbers</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">sum</span> <span class="o">+=</span> <span class="n">num</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">sum</span><span class="p">);</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>35
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1215,8 +1273,27 @@ y
         <span class="n">String</span> <span class="n">message2</span> <span class="o">=</span> <span class="s">"zlab zlab zlab"</span><span class="p">;</span>
         <span class="n">String</span> <span class="n">message3</span> <span class="o">=</span> <span class="s">"prmbozxifcoxdfifpqfzbumfxifalzflrp"</span><span class="p">;</span>
 
+        <span class="n">String</span> <span class="n">decodeMessage</span> <span class="o">=</span> <span class="s">""</span> <span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">message1</span><span class="p">.</span><span class="na">length</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">letters</span><span class="p">.</span><span class="na">length</span><span class="p">();</span> <span class="n">k</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">message1</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">).</span><span class="na">equals</span><span class="p">(</span><span class="n">letters</span><span class="o">[</span><span class="n">k</span><span class="o">]</span><span class="p">)){</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">){</span> <span class="c1">// largest index</span>
+                    <span class="n">decodeMessage</span> <span class="o">+=</span> <span class="n">letters</span><span class="o">[</span><span class="n">k</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">-</span> <span class="mi">26</span><span class="o">]</span><span class="p">;</span> <span class="c1">//shift 26 letters</span>
+                <span class="p">}</span>
+                <span class="k">else</span><span class="p">{</span>
+                    <span class="n">decodeMessage</span> <span class="o">+=</span> <span class="n">letters</span><span class="o">[</span><span class="n">k</span> <span class="o">+</span> <span class="mi">3</span><span class="o">]</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+       <span class="p">}</span>
     <span class="p">}</span>
+    <span class="k">return</span> <span class="n">String</span> <span class="n">decodeMessage</span><span class="p">;</span>
 <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">CaesarCipher</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+
+
+<span class="c1">//I tried :(</span>
 </pre></div>
 
     </div>

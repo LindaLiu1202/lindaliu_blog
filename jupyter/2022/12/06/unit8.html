@@ -149,6 +149,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Searching-for-a-Value-in-a-2D-Array:">Searching for a Value in a 2D Array: </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#Hack-4:-Finding-the-Min/Max-Value:">Hack 4: Finding the Min/Max Value: </a></li>
+<li class="toc-entry toc-h3"><a href="#Mistake-(be-careful!!)">Mistake (be careful!!) </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#HW!">HW! </a>
@@ -278,7 +279,7 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>arr[0][0] = 1
-arr[2][0] = 6
+arr[1][2] = 6
 arr[2][1] = 8
 </pre>
 </div>
@@ -323,6 +324,7 @@ arr[2][1] = 8
       <span class="p">};</span>
  
       <span class="c1">// Print the last element in the array!</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="mi">2</span><span class="o">][</span><span class="mi">2</span><span class="o">]</span><span class="p">);</span>
        
     <span class="p">}</span>
  
@@ -331,6 +333,20 @@ arr[2][1] = 8
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>i
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -380,6 +396,8 @@ arr[2][1] = 8
  
        <span class="c1">// Change Austin to Athens and print!</span>
        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Change Austin to Athens and print!"</span><span class="p">);</span>
+       <span class="n">arr</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="s">"Athens"</span><span class="p">;</span>
+       <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">2</span><span class="o">]</span><span class="p">);</span>
        
     <span class="p">}</span>
  
@@ -398,6 +416,7 @@ arr[2][1] = 8
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Change Austin to Athens and print!
+Athens
 </pre>
 </div>
 </div>
@@ -511,6 +530,7 @@ c d i j
       <span class="p">};</span>
 
       <span class="c1">// Print out the array without using numerical values!</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">arr</span><span class="p">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="o">][</span><span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span><span class="p">);</span>
       
    <span class="p">}</span>
 
@@ -519,6 +539,20 @@ c d i j
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Columbus
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -557,7 +591,7 @@ c d i j
 
         <span class="n">String</span> <span class="n">match</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
         <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Boston"</span><span class="p">;</span>
-        <span class="k">for</span> <span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">row</span> <span class="p">:</span> <span class="n">arr</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">row</span> <span class="p">:</span> <span class="n">arr</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">//: - within</span>
             <span class="k">for</span> <span class="p">(</span><span class="n">String</span> <span class="n">item</span> <span class="p">:</span> <span class="n">row</span><span class="p">)</span> <span class="p">{</span>
                 <span class="k">if</span> <span class="p">(</span><span class="n">item</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">name</span><span class="p">))</span> <span class="p">{</span>
                     <span class="n">match</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
@@ -632,9 +666,18 @@ c d i j
         <span class="c1">// Use nested for loops to find the longest or shortest string!</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Use nested for loops to find the longest or shortest string!"</span><span class="p">);</span>
         
+        <span class="n">String</span> <span class="n">max</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">r</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">r</span><span class="o">&lt;</span><span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">r</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">c</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">c</span><span class="o">&lt;</span><span class="n">arr</span><span class="o">[</span><span class="n">r</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">c</span><span class="o">++</span><span class="p">)</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">max</span><span class="p">.</span><span class="na">length</span><span class="p">())</span> <span class="p">{</span>
+                <span class="n">max</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">]</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Longest string: "</span> <span class="o">+</span> <span class="n">max</span><span class="p">);</span>
     <span class="p">}</span>
  
  <span class="p">}</span>
+
 <span class="n">Test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
@@ -648,7 +691,8 @@ c d i j
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Use nested for loops to find the longest string!
+<pre>Use nested for loops to find the longest or shortest string!
+Longest string: Cincinnati
 </pre>
 </div>
 </div>
@@ -659,6 +703,28 @@ c d i j
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Mistake-(be-careful!!)">
+<a class="anchor" href="#Mistake-(be-careful!!)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mistake (be careful!!)<a class="anchor-link" href="#Mistake-(be-careful!!)"> </a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Spending so much time finding what's the bug of code!!!</p>
+<p>The error is that I am using .length for finding the length of a string element in the 2d array</p>
+<p>original (error)
+if (arr[r][c].length &gt; max.length)</p>
+<p>fixed
+if (arr[r][c].length() &gt; max.length())</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">

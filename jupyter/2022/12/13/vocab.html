@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      10 min read
     
 </span></p>
 
@@ -756,7 +756,59 @@ comparing strings - use .equal()</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Public Access Modifier - easily accessible from any part of the program. 
-All data members and member functions of a class are public by default.</p>
+All data members and member functions of a class are public by default.
+A public class, method, or variable can be accessed from any other class at any time.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="c1">//declare a class as public</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Animal</span><span class="p">{</span>
+
+<span class="p">}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="c1">//the Animal class can be accessed by any other class</span>
+<span class="c1">//specifying a variable and a method as public</span>
+<span class="kd">public</span> <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">getAge</span><span class="p">(){</span>
+<span class="p">}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Private Access Modifier - most restrictive access level (hides data from the outside world)
+Class and interfaces cannot be private.
+Variables that are declared private can be accessed outside the class, if public getter methods are present in the class.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Calculator</span> <span class="p">{</span>
+    <span class="c1">// Key instance variables</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">expression</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">tokens</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">reverse_polish</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">Double</span> <span class="n">result</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+<span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
 
 </div>
 </div>

@@ -10,15 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This is Linda Liu’s Blog!" />
 <meta property="og:description" content="This is Linda Liu’s Blog!" />
-<link rel="canonical" href="https://lindaliu1202.github.io/lindaliu_blog/2022/12/13/vocab.html" />
-<meta property="og:url" content="https://lindaliu1202.github.io/lindaliu_blog/2022/12/13/vocab.html" />
+<link rel="canonical" href="https://lindaliu1202.github.io/lindaliu_blog/jupyter/2022/12/13/vocab.html" />
+<meta property="og:url" content="https://lindaliu1202.github.io/lindaliu_blog/jupyter/2022/12/13/vocab.html" />
 <meta property="og:site_name" content="My Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-12-13T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="CB Key Learnings and Vocabs" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-13T00:00:00-06:00","datePublished":"2022-12-13T00:00:00-06:00","description":"This is Linda Liu’s Blog!","headline":"CB Key Learnings and Vocabs","mainEntityOfPage":{"@type":"WebPage","@id":"https://lindaliu1202.github.io/lindaliu_blog/2022/12/13/vocab.html"},"url":"https://lindaliu1202.github.io/lindaliu_blog/2022/12/13/vocab.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-13T00:00:00-06:00","datePublished":"2022-12-13T00:00:00-06:00","description":"This is Linda Liu’s Blog!","headline":"CB Key Learnings and Vocabs","mainEntityOfPage":{"@type":"WebPage","@id":"https://lindaliu1202.github.io/lindaliu_blog/jupyter/2022/12/13/vocab.html"},"url":"https://lindaliu1202.github.io/lindaliu_blog/jupyter/2022/12/13/vocab.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/lindaliu_blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://lindaliu1202.github.io/lindaliu_blog/feed.xml" title="My Blog" /><link rel="shortcut icon" type="image/x-icon" href="/lindaliu_blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -84,6 +84,13 @@ window.onload = wrap_img;
 </span></p>
 
     
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/lindaliu_blog/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
 
     
       
@@ -116,7 +123,28 @@ window.onload = wrap_img;
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h3"><a href="#Casting">Casting </a></li>
+<li class="toc-entry toc-h2"><a href="#Wrapper-Classes">Wrapper Classes </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Concatenation">Concatenation </a></li>
+<li class="toc-entry toc-h3"><a href="#Math-class-(Random-usage)">Math class (Random usage) </a></li>
+<li class="toc-entry toc-h3"><a href="#Compound-Boolean-Expression">Compound Boolean Expression </a></li>
+<li class="toc-entry toc-h3"><a href="#De-Morgan's-Law">De Morgan&#39;s Law </a></li>
+<li class="toc-entry toc-h3"><a href="#.compareTo()">.compareTo() </a></li>
+<li class="toc-entry toc-h3"><a href="#Comparing-String-vs-Comparing-Numbers">Comparing String vs Comparing Numbers </a></li>
+<li class="toc-entry toc-h3"><a href="#Difference-between-Looping-through-Array,-ArrayLists,-String">Difference between Looping through Array, ArrayLists, String </a></li>
+<li class="toc-entry toc-h3"><a href="#Show-use-case-of-access-modifiers:-Public,-Private,-Protected">Show use case of access modifiers: Public, Private, Protected </a></li>
+<li class="toc-entry toc-h3"><a href="#Inheritance,-extends">Inheritance, extends </a></li>
+<li class="toc-entry toc-h3"><a href="#Subclass-constructor,-super-Keyword">Subclass constructor, super Keyword </a></li>
+<li class="toc-entry toc-h3"><a href="#Overloading-a-method,-same-name-different-parameters">Overloading a method, same name different parameters </a></li>
+<li class="toc-entry toc-h3"><a href="#Overriding-a-method,-same-signature-of-a-method">Overriding a method, same signature of a method </a></li>
+<li class="toc-entry toc-h3"><a href="#Late-binding-of-object,-referencing-superclass-object,-ie-Animal-a-=-new-Chicken();-Animal-b-=-new-Goat();">Late binding of object, referencing superclass object, ie Animal a = new Chicken(); Animal b = new Goat(); </a></li>
+<li class="toc-entry toc-h3"><a href="#Polymorphism:-any-of-overloading,-overriding,-late-binding">Polymorphism: any of overloading, overriding, late binding </a></li>
+<li class="toc-entry toc-h3"><a href="#Ternary-Operator">Ternary Operator </a></li>
+</ul>
+</li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -125,13 +153,17 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Casting">Casting<a class="anchor-link" href="#Casting"> </a></h3>
+<h3 id="Casting">
+<a class="anchor" href="#Casting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Casting<a class="anchor-link" href="#Casting"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>type casting - to convert variable values from one type to another</p>
 <p>Situation to use casting: If you have integers and you want a double result from some mathematical operation cast one of the integers to a double using (double)</p>
@@ -171,14 +203,16 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Values of type double can be rounded to the nearest integer by adding or subtracting .5 and casting with (int) using formulas like the following.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>int nearestInt = (int)(number + 0.5);
 int nearestNegInt = (int)(negNumber – 0.5);</p>
@@ -186,13 +220,17 @@ int nearestNegInt = (int)(negNumber – 0.5);</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Wrapper-Classes">Wrapper Classes<a class="anchor-link" href="#Wrapper-Classes"> </a></h2>
+<h2 id="Wrapper-Classes">
+<a class="anchor" href="#Wrapper-Classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wrapper Classes<a class="anchor-link" href="#Wrapper-Classes"> </a>
+</h2>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Provide a way to use primitive data types (int, boolean, etc..) as objects.</p>
 <p>Must use wrapper classes when working with ArrayList (collection objects), where primitive types cannot be used (the list can only store objects)</p>
@@ -200,9 +238,10 @@ int nearestNegInt = (int)(negNumber – 0.5);</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/lindaliu_blog/images/copied_from_nb/../images/wrapperClass.png" alt="wrapperClass" /></p>
+<p><img src="/lindaliu_blog/images/copied_from_nb/../images/wrapperClass.png" alt="wrapperClass"></p>
 
 </div>
 </div>
@@ -224,13 +263,17 @@ int nearestNegInt = (int)(negNumber – 0.5);</p>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Concatenation">Concatenation<a class="anchor-link" href="#Concatenation"> </a></h3>
+<h3 id="Concatenation">
+<a class="anchor" href="#Concatenation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Concatenation<a class="anchor-link" href="#Concatenation"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Concatenation - the operation of joining two strings together.
 can join strings using either the addition (+) operator or the String’s concat() method</p>
@@ -245,7 +288,7 @@ can join strings using either the addition (+) operator or the String’s concat
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;pan&quot;</span> <span class="o">+</span> <span class="s">&quot;handle&quot;</span><span class="p">);</span> <span class="c1">//addition operator</span>
+<div class=" highlight hl-java"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"pan"</span> <span class="o">+</span> <span class="s">"handle"</span><span class="p">);</span> <span class="c1">//addition operator</span>
 </pre></div>
 
     </div>
@@ -269,9 +312,10 @@ can join strings using either the addition (+) operator or the String’s concat
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span><span class="kd">public</span> <span class="n">String</span> <span class="nf">concat</span><span class="p">(</span><span class="n">String</span> <span class="n">s</span><span class="p">)</span> <span class="c1">//syntax for String&#39;s concat() method</span>
+<div class="highlight"><pre><span></span><span class="kd">public</span> <span class="n">String</span> <span class="nf">concat</span><span class="p">(</span><span class="n">String</span> <span class="n">s</span><span class="p">)</span> <span class="c1">//syntax for String's concat() method</span>
 </pre></div>
 
 </div>
@@ -287,8 +331,8 @@ can join strings using either the addition (+) operator or the String’s concat
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="p">{</span>
 
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[]</span><span class="p">)</span> <span class="p">{</span>
-       <span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="s">&quot;Strings are immutable&quot;</span><span class="p">;</span>
-       <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="na">concat</span><span class="p">(</span><span class="s">&quot; all the time&quot;</span><span class="p">);</span>
+       <span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"Strings are immutable"</span><span class="p">;</span>
+       <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="na">concat</span><span class="p">(</span><span class="s">" all the time"</span><span class="p">);</span>
        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
     <span class="p">}</span>
  <span class="p">}</span>
@@ -317,7 +361,8 @@ can join strings using either the addition (+) operator or the String’s concat
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Mixed type Concatenation</p>
 
@@ -332,7 +377,7 @@ can join strings using either the addition (+) operator or the String’s concat
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;My age is &quot;</span> <span class="o">+</span> <span class="n">age</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"My age is "</span> <span class="o">+</span> <span class="n">age</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -356,13 +401,17 @@ can join strings using either the addition (+) operator or the String’s concat
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Math-class-(Random-usage)">Math class (Random usage)<a class="anchor-link" href="#Math-class-(Random-usage)"> </a></h3>
+<h3 id="Math-class-(Random-usage)">
+<a class="anchor" href="#Math-class-(Random-usage)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Math class (Random usage)<a class="anchor-link" href="#Math-class-(Random-usage)"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The java.lang.Math.random() method returns a pseudorandom double type number greater than or equal to 0.0 and less than 1.0.</p>
 
@@ -390,7 +439,7 @@ can join strings using either the addition (+) operator or the String’s concat
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0.3718845004114565
+<pre>0.798131362694211
 </pre>
 </div>
 </div>
@@ -401,13 +450,17 @@ can join strings using either the addition (+) operator or the String’s concat
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Compound-Boolean-Expression">Compound Boolean Expression<a class="anchor-link" href="#Compound-Boolean-Expression"> </a></h3>
+<h3 id="Compound-Boolean-Expression">
+<a class="anchor" href="#Compound-Boolean-Expression" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compound Boolean Expression<a class="anchor-link" href="#Compound-Boolean-Expression"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If two boolean values/expressions are combined with a logical and (&amp;&amp;) and the first expression is false, then the second expression won't be executed
 The logical AND (&amp;&amp;) (logical conjunction) operator for a set of boolean operands will be true if and only if all the operands are true. Otherwise it will be false.</p>
@@ -451,13 +504,17 @@ true
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="De-Morgan's-Law">De Morgan's Law<a class="anchor-link" href="#De-Morgan's-Law"> </a></h3>
+<h3 id="De-Morgan's-Law">
+<a class="anchor" href="#De-Morgan's-Law" aria-hidden="true"><span class="octicon octicon-link"></span></a>De Morgan's Law<a class="anchor-link" href="#De-Morgan's-Law"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>the complement of the union of two sets will be equal to the intersection of their individual complements</p>
 <p>show how to handle the negation of a complex conditional, which is a conditional statement with more than one condition joined by an and (&amp;&amp;) or or (||), such as (x &lt; 3) &amp;&amp; (y &gt; 2)</p>
@@ -465,7 +522,8 @@ true
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>&lt; becomes &gt;=</p>
 <p>"&gt; becomes &lt;="</p>
@@ -477,14 +535,16 @@ true
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/lindaliu_blog/images/copied_from_nb/../images/demorgan1.png" alt="deMorgan&#39;s" /></p>
+<p><img src="/lindaliu_blog/images/copied_from_nb/../images/demorgan1.png" alt="deMorgan's"></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>!(a || b) == !a &amp;&amp; !b</p>
 <p>not (A or B) = not A and not B</p>
@@ -493,9 +553,10 @@ true
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/lindaliu_blog/images/copied_from_nb/../images/demorgan2.png" alt="deMorgan&#39;s" /></p>
+<p><img src="/lindaliu_blog/images/copied_from_nb/../images/demorgan2.png" alt="deMorgan's"></p>
 
 </div>
 </div>
@@ -507,7 +568,7 @@ true
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">// using De Morgan&#39;s Law, outputs are the same</span>
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// using De Morgan's Law, outputs are the same</span>
 <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="o">&amp;&amp;</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">));</span> 
@@ -543,7 +604,7 @@ true
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">// if not use De Morgan&#39;s Law correctly, you will get different outputs</span>
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// if not use De Morgan's Law correctly, you will get different outputs</span>
 <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="o">&amp;&amp;</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">));</span> 
@@ -572,76 +633,47 @@ false
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id=".compareTo()">.compareTo()<a class="anchor-link" href="#.compareTo()"> </a></h3>
+<h3 id=".compareTo()">
+<a class="anchor" href="#.compareTo()" aria-hidden="true"><span class="octicon octicon-link"></span></a>.compareTo()<a class="anchor-link" href="#.compareTo()"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>.compareTo() compares two strings lexicographically returns 0 if the string is equal to the other string. A value less than 0 is returned if the string is less than the other string (less characters) and a value greater than 0 if the string is greater than the other string (more characters)</p>
 
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="n">guess1</span><span class="p">.</span><span class="na">compareTo</span><span class="p">(</span><span class="n">guess2</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> 
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="n">guess1</span><span class="p">.</span><span class="na">compareTo</span><span class="p">(</span><span class="n">guess2</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> 
     <span class="k">return</span> <span class="n">guess1</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="k">else</span>
     <span class="k">return</span> <span class="n">guess2</span><span class="p">;</span>
 </pre></div>
 
-    </div>
 </div>
 </div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">if(guess1.compareTo(</span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">guess2</span><span class="ansi-black-intense-fg ansi-bold">) &gt; 0) { </span>
-<span class="ansi-red-intense-fg ansi-bold">cannot find symbol</span>
-<span class="ansi-red-intense-fg ansi-bold">  symbol:   variable guess2</span>
-
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">if(</span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">guess1</span><span class="ansi-black-intense-fg ansi-bold">.compareTo(guess2) &gt; 0) { </span>
-<span class="ansi-red-intense-fg ansi-bold">cannot find symbol</span>
-<span class="ansi-red-intense-fg ansi-bold">  symbol:   variable guess1</span>
-
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    return </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">guess1</span><span class="ansi-black-intense-fg ansi-bold">;</span>
-<span class="ansi-red-intense-fg ansi-bold">cannot find symbol</span>
-<span class="ansi-red-intense-fg ansi-bold">  symbol:   variable guess1</span>
-
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    return </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">guess2</span><span class="ansi-black-intense-fg ansi-bold">;</span>
-<span class="ansi-red-intense-fg ansi-bold">cannot find symbol</span>
-<span class="ansi-red-intense-fg ansi-bold">  symbol:   variable guess2</span>
-</pre>
 </div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Comparing-String-vs-Comparing-Numbers">Comparing String vs Comparing Numbers<a class="anchor-link" href="#Comparing-String-vs-Comparing-Numbers"> </a></h3>
+<h3 id="Comparing-String-vs-Comparing-Numbers">
+<a class="anchor" href="#Comparing-String-vs-Comparing-Numbers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comparing String vs Comparing Numbers<a class="anchor-link" href="#Comparing-String-vs-Comparing-Numbers"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>comparing numbers - use == 
 comparing strings - use .equal()</p>
@@ -663,22 +695,41 @@ comparing strings - use .equal()</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">Incomplete input:</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">if(secret.substring(i, i+guess.length()).equals(guess)) //in 2021 FRQ</span></pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Difference-between-Looping-through-Array,-ArrayLists,-String">Difference between Looping through Array, ArrayLists, String<a class="anchor-link" href="#Difference-between-Looping-through-Array,-ArrayLists,-String"> </a></h3>
+<h3 id="Difference-between-Looping-through-Array,-ArrayLists,-String">
+<a class="anchor" href="#Difference-between-Looping-through-Array,-ArrayLists,-String" aria-hidden="true"><span class="octicon octicon-link"></span></a>Difference between Looping through Array, ArrayLists, String<a class="anchor-link" href="#Difference-between-Looping-through-Array,-ArrayLists,-String"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span><span class="n">String</span>    <span class="n">str</span>
 <span class="nf">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">str</span><span class="p">.</span><span class="na">length</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
     <span class="n">str</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>       <span class="c1">// means get every character in String </span>
  <span class="mo">01234</span>
-<span class="s">&quot;Linda&quot;</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>      <span class="s">&quot;Linda&quot;</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="s">"Linda"</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>      <span class="s">"Linda"</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 <span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="n">start</span> <span class="p">,</span> <span class="n">end</span><span class="p">)</span>     <span class="o">[</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">)</span>     <span class="n">from</span> <span class="n">start</span> <span class="n">to</span> <span class="n">end</span><span class="o">-</span><span class="mi">1</span>          
 
 
@@ -695,20 +746,25 @@ comparing strings - use .equal()</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Show-use-case-of-access-modifiers:-Public,-Private,-Protected">Show use case of access modifiers: Public, Private, Protected<a class="anchor-link" href="#Show-use-case-of-access-modifiers:-Public,-Private,-Protected"> </a></h3>
+<h3 id="Show-use-case-of-access-modifiers:-Public,-Private,-Protected">
+<a class="anchor" href="#Show-use-case-of-access-modifiers:-Public,-Private,-Protected" aria-hidden="true"><span class="octicon octicon-link"></span></a>Show use case of access modifiers: Public, Private, Protected<a class="anchor-link" href="#Show-use-case-of-access-modifiers:-Public,-Private,-Protected"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>protected - attribute isn't affected by outside modifiers</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Car</span> <span class="p">{</span>
     <span class="kd">protected</span> <span class="n">String</span> <span class="n">brandName</span><span class="p">;</span>
@@ -722,13 +778,17 @@ comparing strings - use .equal()</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Inheritance,-extends">Inheritance, extends<a class="anchor-link" href="#Inheritance,-extends"> </a></h3>
+<h3 id="Inheritance,-extends">
+<a class="anchor" href="#Inheritance,-extends" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inheritance, extends<a class="anchor-link" href="#Inheritance,-extends"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>extends (inherit the attributes and methods of the base class) - avoid having lots of repeated code (no need to redefine the methods)</p>
 
@@ -756,13 +816,17 @@ comparing strings - use .equal()</p>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Subclass-constructor,-super-Keyword">Subclass constructor, super Keyword<a class="anchor-link" href="#Subclass-constructor,-super-Keyword"> </a></h3>
+<h3 id="Subclass-constructor,-super-Keyword">
+<a class="anchor" href="#Subclass-constructor,-super-Keyword" aria-hidden="true"><span class="octicon octicon-link"></span></a>Subclass constructor, super Keyword<a class="anchor-link" href="#Subclass-constructor,-super-Keyword"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>constructor for the subclass uses the superclass constructor with the super keyword</p>
 <p>super keyword - to use constructors and methods of superclass in a subclass</p>
@@ -781,7 +845,7 @@ comparing strings - use .equal()</p>
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">KpopArtist</span> <span class="kd">extends</span> <span class="n">Artist</span> <span class="p">{</span>
     <span class="c1">// Constructor for Subclass</span>
     <span class="kd">public</span> <span class="nf">KpopArtist</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">double</span> <span class="n">age</span><span class="p">,</span> <span class="n">String</span> <span class="n">rapName</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">// use the Superclass constructor for the shared attributes through the keyword &quot;super&quot;</span>
+        <span class="c1">// use the Superclass constructor for the shared attributes through the keyword "super"</span>
         <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">);</span>
         <span class="c1">//not in Superclass, add this separately in the constructor</span>
         <span class="k">this</span><span class="p">.</span><span class="na">rapName</span> <span class="o">=</span> <span class="n">rapName</span><span class="p">;</span>
@@ -797,37 +861,93 @@ comparing strings - use .equal()</p>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Overloading-a-method,-same-name-different-parameters">Overloading a method, same name different parameters<a class="anchor-link" href="#Overloading-a-method,-same-name-different-parameters"> </a></h3>
+<h3 id="Overloading-a-method,-same-name-different-parameters">
+<a class="anchor" href="#Overloading-a-method,-same-name-different-parameters" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overloading a method, same name different parameters<a class="anchor-link" href="#Overloading-a-method,-same-name-different-parameters"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Overriding-a-method,-same-signature-of-a-method">Overriding a method, same signature of a method<a class="anchor-link" href="#Overriding-a-method,-same-signature-of-a-method"> </a></h3>
+<p>Having two methods with the same name but different arguments and functionalities</p>
+
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Late-binding-of-object,-referencing-superclass-object,-ie-Animal-a-=-new-Chicken();-Animal-b-=-new-Goat();">Late binding of object, referencing superclass object, ie Animal a = new Chicken(); Animal b = new Goat();<a class="anchor-link" href="#Late-binding-of-object,-referencing-superclass-object,-ie-Animal-a-=-new-Chicken();-Animal-b-=-new-Goat();"> </a></h3>
+<div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CpopArtist</span> <span class="kd">extends</span> <span class="n">Artist</span> <span class="p">{</span> <span class="c1">//subclass</span>
+<span class="p">...</span>
+
+    <span class="nd">@Override</span>
+<span class="p">...</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">compose</span> <span class="p">(</span><span class="kt">boolean</span> <span class="n">a</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// input a boolean value instead of int</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Composing melody? "</span> <span class="o">+</span> <span class="n">a</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">compose</span> <span class="p">(</span><span class="kt">boolean</span> <span class="n">a</span><span class="p">,</span> <span class="kt">boolean</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">//different arguments</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Composing melody? "</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="s">" Writing lyrics? "</span> <span class="o">+</span> <span class="n">b</span><span class="p">);</span>
+    <span class="p">}</span>
+
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">...</span>
+        <span class="c1">// Using the overloaded method </span>
+        <span class="n">jackson</span><span class="p">.</span><span class="na">compose</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>  
+        <span class="n">jackson</span><span class="p">.</span><span class="na">compose</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>  
+
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">CpopArtist</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Polymorphism:-any-of-overloading,-overriding,-late-binding">Polymorphism: any of overloading, overriding, late binding<a class="anchor-link" href="#Polymorphism:-any-of-overloading,-overriding,-late-binding"> </a></h3>
+<h3 id="Overriding-a-method,-same-signature-of-a-method">
+<a class="anchor" href="#Overriding-a-method,-same-signature-of-a-method" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overriding a method, same signature of a method<a class="anchor-link" href="#Overriding-a-method,-same-signature-of-a-method"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Ternary-Operator">Ternary Operator<a class="anchor-link" href="#Ternary-Operator"> </a></h3>
+<h3 id="Late-binding-of-object,-referencing-superclass-object,-ie-Animal-a-=-new-Chicken();-Animal-b-=-new-Goat();">
+<a class="anchor" href="#Late-binding-of-object,-referencing-superclass-object,-ie-Animal-a-=-new-Chicken();-Animal-b-=-new-Goat();" aria-hidden="true"><span class="octicon octicon-link"></span></a>Late binding of object, referencing superclass object, ie Animal a = new Chicken(); Animal b = new Goat();<a class="anchor-link" href="#Late-binding-of-object,-referencing-superclass-object,-ie-Animal-a-=-new-Chicken();-Animal-b-=-new-Goat();"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Polymorphism:-any-of-overloading,-overriding,-late-binding">
+<a class="anchor" href="#Polymorphism:-any-of-overloading,-overriding,-late-binding" aria-hidden="true"><span class="octicon octicon-link"></span></a>Polymorphism: any of overloading, overriding, late binding<a class="anchor-link" href="#Polymorphism:-any-of-overloading,-overriding,-late-binding"> </a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Ternary-Operator">
+<a class="anchor" href="#Ternary-Operator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ternary Operator<a class="anchor-link" href="#Ternary-Operator"> </a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>the only conditional operator that takes three operands (condition, expression1, expression2)</p>
 <p>can use the ternary operator in place of if-else conditions or even switch conditions using nested ternary operators</p>
@@ -836,9 +956,10 @@ comparing strings - use .equal()</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/lindaliu_blog/images/copied_from_nb/../images/ternaryOperator.jpeg" alt="ternaryOperator" /></p>
+<p><img src="/lindaliu_blog/images/copied_from_nb/../images/ternaryOperator.jpeg" alt="ternaryOperator"></p>
 
 </div>
 </div>
@@ -858,10 +979,10 @@ comparing strings - use .equal()</p>
       <span class="kt">int</span> <span class="n">number</span> <span class="o">=</span> <span class="mi">24</span><span class="p">;</span>
   
       <span class="k">if</span><span class="p">(</span><span class="n">number</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Positive Number&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Positive Number"</span><span class="p">);</span>
       <span class="p">}</span>
       <span class="k">else</span> <span class="p">{</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Negative Number&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Negative Number"</span><span class="p">);</span>
       <span class="p">}</span>
     <span class="p">}</span>
   <span class="p">}</span>
@@ -890,7 +1011,7 @@ comparing strings - use .equal()</p>
       <span class="c1">// create a variable </span>
       <span class="kt">int</span> <span class="n">number</span> <span class="o">=</span> <span class="mi">24</span><span class="p">;</span>
   
-      <span class="n">String</span> <span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="n">number</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">?</span> <span class="s">&quot;Positive Number&quot;</span> <span class="p">:</span> <span class="s">&quot;Negative Number&quot;</span><span class="p">;</span> <span class="c1">//shorter</span>
+      <span class="n">String</span> <span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="n">number</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">?</span> <span class="s">"Positive Number"</span> <span class="p">:</span> <span class="s">"Negative Number"</span><span class="p">;</span> <span class="c1">//shorter</span>
       <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">result</span><span class="p">);</span>
     <span class="p">}</span>
   <span class="p">}</span>
@@ -922,7 +1043,7 @@ comparing strings - use .equal()</p>
       <span class="c1">// nested ternary operator</span>
       <span class="c1">// to find the largest number</span>
       <span class="kt">int</span> <span class="n">largest</span> <span class="o">=</span> <span class="p">(</span><span class="n">n1</span> <span class="o">&gt;=</span> <span class="n">n2</span><span class="p">)</span> <span class="o">?</span> <span class="p">((</span><span class="n">n1</span> <span class="o">&gt;=</span> <span class="n">n3</span><span class="p">)</span> <span class="o">?</span> <span class="n">n1</span> <span class="p">:</span> <span class="n">n3</span><span class="p">)</span> <span class="p">:</span> <span class="p">((</span><span class="n">n2</span> <span class="o">&gt;=</span> <span class="n">n3</span><span class="p">)</span> <span class="o">?</span> <span class="n">n2</span> <span class="p">:</span> <span class="n">n3</span><span class="p">);</span>
-      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Largest Number: &quot;</span> <span class="o">+</span> <span class="n">largest</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Largest Number: "</span> <span class="o">+</span> <span class="n">largest</span><span class="p">);</span>
     <span class="p">}</span>
   <span class="p">}</span>
 
@@ -941,7 +1062,8 @@ comparing strings - use .equal()</p>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In FRQ 4 (nested for loops) for print print single character, except at midpoint print color code</p>
 
@@ -958,8 +1080,8 @@ comparing strings - use .equal()</p>
 <div class=" highlight hl-java"><pre><span></span><span class="n">String</span> <span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="n">ROWS</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">j</span> <span class="o">==</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="n">COLS</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="p">)</span> 
 <span class="o">?</span> <span class="n">lights</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span><span class="p">.</span><span class="na">getRGB</span><span class="p">()</span>
 <span class="p">:</span> <span class="p">(</span><span class="n">j</span> <span class="o">==</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="n">COLS</span> <span class="o">/</span> <span class="mi">2</span><span class="p">))</span>  <span class="c1">// nested ternary</span>
-<span class="o">?</span> <span class="s">&quot; &quot;</span><span class="p">.</span><span class="na">repeat</span><span class="p">(</span><span class="n">lights</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span><span class="p">.</span><span class="na">getRGB</span><span class="p">().</span><span class="na">length</span><span class="p">())</span>
-<span class="p">:</span> <span class="s">&quot; &quot;</span><span class="p">;</span>
+<span class="o">?</span> <span class="s">" "</span><span class="p">.</span><span class="na">repeat</span><span class="p">(</span><span class="n">lights</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span><span class="p">.</span><span class="na">getRGB</span><span class="p">().</span><span class="na">length</span><span class="p">())</span>
+<span class="p">:</span> <span class="s">" "</span><span class="p">;</span>
 </pre></div>
 
     </div>
@@ -973,7 +1095,15 @@ comparing strings - use .equal()</p>
 
 
 
-  </div><a class="u-url" href="/lindaliu_blog/2022/12/13/vocab.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="LindaLiu1202/lindaliu_blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/lindaliu_blog/jupyter/2022/12/13/vocab.html" hidden></a>
 </article>
 
       </div>

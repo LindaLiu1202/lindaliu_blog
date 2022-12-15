@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      9 min read
     
 </span></p>
 
@@ -139,8 +139,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#Subclass-constructor,-super-Keyword">Subclass constructor, super Keyword </a></li>
 <li class="toc-entry toc-h3"><a href="#Overloading-a-method,-same-name-different-parameters">Overloading a method, same name different parameters </a></li>
 <li class="toc-entry toc-h3"><a href="#Overriding-a-method,-same-signature-of-a-method">Overriding a method, same signature of a method </a></li>
-<li class="toc-entry toc-h3"><a href="#Late-binding-of-object,-referencing-superclass-object,-ie-Animal-a-=-new-Chicken();-Animal-b-=-new-Goat();">Late binding of object, referencing superclass object, ie Animal a = new Chicken(); Animal b = new Goat(); </a></li>
 <li class="toc-entry toc-h3"><a href="#Polymorphism:-any-of-overloading,-overriding,-late-binding">Polymorphism: any of overloading, overriding, late binding </a></li>
+<li class="toc-entry toc-h3"><a href="#Late-binding-of-object,-referencing-superclass-object,-ie-Animal-a-=-new-Chicken();-Animal-b-=-new-Goat();">Late binding of object, referencing superclass object, ie Animal a = new Chicken(); Animal b = new Goat(); </a></li>
 <li class="toc-entry toc-h3"><a href="#Ternary-Operator">Ternary Operator </a></li>
 </ul>
 </li>
@@ -922,6 +922,102 @@ comparing strings - use .equal()</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Overriding allows a subclass or child class to provide a specific implementation of a method that has already been provided by a super-classes or parent classes. When a method in a subclass has the same name, same parameters or signature, and same return type (or sub-type) as a method in its super-class, then the method in the subclass will override the method in the super-class.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">//existing method in superclass</span>
+    
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">sing</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Singing..."</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">dance</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Dancing..."</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">rap</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Rapping..."</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// We use override to change the functionality in the subclass of an existing method in the superclass</span>
+<span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">sing</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Singing in Korean... Good boy gone bad..."</span><span class="p">);</span> <span class="c1">//title of song of their album</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">...</span>
+    <span class="c1">// Using the overridden method</span>
+    <span class="n">yeonjun</span><span class="p">.</span><span class="na">sing</span><span class="p">();</span>
+<span class="p">...</span>
+<span class="p">}</span>
+
+<span class="c1">//output: </span>
+<span class="c1">///Singing in Korean... Good boy gone bad...</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Polymorphism:-any-of-overloading,-overriding,-late-binding">
+<a class="anchor" href="#Polymorphism:-any-of-overloading,-overriding,-late-binding" aria-hidden="true"><span class="octicon octicon-link"></span></a>Polymorphism: any of overloading, overriding, late binding<a class="anchor-link" href="#Polymorphism:-any-of-overloading,-overriding,-late-binding"> </a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Polymorphism - allow us to perform the same action in many different ways
+Happens when classes are related to each other by Inheritance
+Essentially it helps when you have to reuse attributes and methods of an already existing class in a new class</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The above code example demonstrates Runtime Polymorphism.
+It is also called Dynamic Binding or Dynamic Method Dispatch. When you hear any of these things, think of method overriding.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Late-binding-of-object,-referencing-superclass-object,-ie-Animal-a-=-new-Chicken();-Animal-b-=-new-Goat();">
 <a class="anchor" href="#Late-binding-of-object,-referencing-superclass-object,-ie-Animal-a-=-new-Chicken();-Animal-b-=-new-Goat();" aria-hidden="true"><span class="octicon octicon-link"></span></a>Late binding of object, referencing superclass object, ie Animal a = new Chicken(); Animal b = new Goat();<a class="anchor-link" href="#Late-binding-of-object,-referencing-superclass-object,-ie-Animal-a-=-new-Chicken();-Animal-b-=-new-Goat();"> </a>
 </h3>
@@ -931,9 +1027,38 @@ comparing strings - use .equal()</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Polymorphism:-any-of-overloading,-overriding,-late-binding">
-<a class="anchor" href="#Polymorphism:-any-of-overloading,-overriding,-late-binding" aria-hidden="true"><span class="octicon octicon-link"></span></a>Polymorphism: any of overloading, overriding, late binding<a class="anchor-link" href="#Polymorphism:-any-of-overloading,-overriding,-late-binding"> </a>
-</h3>
+<p>Late binding has to do with when the method is decided at runtime. Relate this to Runtime Polymorphism or method overriding.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Late binding: In the late binding or dynamic binding, the compiler doesn't decide the method to be called.</p>
+<p>Late binding in its book definition form means that the compiler should perform no argument checks, no type checks on a method call and should leave it all to the runtime.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 5 argument constructor</span>
+    <span class="n">KpopArtist</span> <span class="n">yeonjun</span> <span class="o">=</span> <span class="k">new</span> <span class="n">KpopArtist</span><span class="p">(</span><span class="s">"Yeonjun"</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="s">"Lonely Boy"</span><span class="p">);</span> 
+    <span class="c1">// Example of late binding</span>
+    <span class="n">Artist</span> <span class="n">artist</span> <span class="o">=</span> <span class="k">new</span> <span class="n">KpopArtist</span><span class="p">(</span><span class="s">"Yeonjun"</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="s">"Puma"</span><span class="p">);</span>
+    <span class="c1">// can still use the methods from the child class, even though we didn't mention them in the subclass!</span>
+    <span class="n">yeonjun</span><span class="p">.</span><span class="na">dance</span><span class="p">();</span>
+    <span class="c1">// Using the overridden method</span>
+    <span class="n">yeonjun</span><span class="p">.</span><span class="na">sing</span><span class="p">();</span>
+    <span class="c1">// Using the method we added on to</span>
+    <span class="n">yeonjun</span><span class="p">.</span><span class="na">rap</span><span class="p">();</span>
+    <span class="n">artist</span><span class="p">.</span><span class="na">rap</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+
 </div>
 </div>
 </div>

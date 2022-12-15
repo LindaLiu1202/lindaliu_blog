@@ -344,46 +344,20 @@ Given the following code segment, which of the following will cause an infinite 
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="k">for</span> <span class="p">(</span> <span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">a</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">k</span><span class="o">++</span> <span class="p">)</span>
-<span class="p">{</span>
-   <span class="k">while</span> <span class="p">(</span> <span class="n">a</span><span class="o">[</span> <span class="n">k</span> <span class="o">]</span> <span class="o">&lt;</span> <span class="n">temp</span> <span class="p">)</span>
-   <span class="p">{</span>
-      <span class="n">a</span><span class="o">[</span> <span class="n">k</span> <span class="o">]</span> <span class="o">*=</span> <span class="mi">2</span><span class="p">;</span>
-   <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">   while ( a[ k ] &lt; </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">temp</span><span class="ansi-black-intense-fg ansi-bold"> )</span>
-<span class="ansi-red-intense-fg ansi-bold">cannot find symbol</span>
-<span class="ansi-red-intense-fg ansi-bold">  symbol:   variable temp</span>
-</pre>
-</div>
-</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>for ( int k = 0; k &lt; a.length; k++ )
+{
+   while ( a[ k ] &lt; temp )
+   {
+      a[ k ] *= 2;
+   }
+}</p>
 
 </div>
 </div>
-
 </div>
-    
-
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -417,6 +391,28 @@ Given the following code segment, which of the following will cause an infinite 
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    do something with</span><span class="ansi-black-intense-fg ansi-bold"> i</span>
+<span class="ansi-red-intense-fg ansi-bold">';' expected</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    do </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">something with </span><span class="ansi-black-intense-fg ansi-bold">i</span>
+<span class="ansi-red-intense-fg ansi-bold">variable declaration not allowed here</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    do something with i</span>
+<span class="ansi-red-intense-fg ansi-bold">')' expected</span>
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -890,8 +886,8 @@ o  l  l  e  h  </pre>
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">addMembers</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">names</span><span class="p">,</span> <span class="kt">int</span> <span class="n">gradYear</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">addMembers</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-        <span class="n">memberList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="k">new</span> <span class="n">MemberInfo</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">gradYear</span><span class="p">,</span> <span class="kc">true</span><span class="p">));</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">addMembers</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span> <span class="p">.</span> <span class="c1">//for loop to loops through all members</span>
+        <span class="n">memberList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="k">new</span> <span class="n">MemberInfo</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">gradYear</span><span class="p">,</span> <span class="kc">true</span><span class="p">));</span> <span class="c1">//add member to memberList</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>

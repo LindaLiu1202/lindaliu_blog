@@ -15,8 +15,8 @@
         ,"post1": {
             "title": "CB 52 Questions",
             "content": "Corrections &amp; Tricky Questions . Question 10 . str + int assume int are also strings because the string come first . str + int + int + int . Question 12 . .set() return the orginal string . Question 13 . art is between two words, so each individual word doesn&#39;t have &quot;art&quot; in it which should return false . Question 25 . .add(#, x) add x to the index number and the value that was orginally on that spot was pushed back by 1 . .remove(k) - would return k . list - fixed -&gt; the reason why &quot;baboon&quot; disappeared . However, after baboon is moved to index 1, the loop doesn&#39;t end. It will continued to check till it reaches baboon again, and it will be moved to the end. . Question 31 . for (int[] j : arr) //[] is needed because it&#39;s a 2d array . Question 40 . I. doesn&#39;t not work because for each loop -&gt; delete name - not effect on nameList . II. doesn&#39;t work because it will skip a few names since removing names causes size to decrease while k is still increasing . III. works because it starts from the end so it won&#39;t effect the names in the front .",
-            "url": "https://lindaliu1202.github.io/lindaliu_blog/2023/01/30/CBquiz2.html",
-            "relUrl": "/2023/01/30/CBquiz2.html",
+            "url": "https://lindaliu1202.github.io/lindaliu_blog/jupyter/2023/01/30/CBquiz2.html",
+            "relUrl": "/jupyter/2023/01/30/CBquiz2.html",
             "date": " • Jan 30, 2023"
         }
         

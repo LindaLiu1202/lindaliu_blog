@@ -358,8 +358,8 @@ Red Velvet
 Strawberry
 Vanilla
 
-Number of swaps: 288
-Number of comparisons: 528
+Number of swaps: 324
+Number of comparisons: 594
 </pre>
 </div>
 </div>
@@ -572,9 +572,9 @@ O(n^2), O(2^n) and O(n!) - Horrible/Worst<br></p>
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Total time: 22865333 nanoseconds
-Comparisons: 12492550
-Swaps: 6212144
+<pre>Total time: 37429000 nanoseconds
+Comparisons: 12484620
+Swaps: 6191603
 </pre>
 </div>
 </div>
@@ -590,7 +590,7 @@ Swaps: 6212144
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>12 times: 33089750 37889125 23138459 21927125 21635708 22061292 25474041 25069542 20424875 22383375 22391875 22257667
 <br>
-average (throw out highest and lowest):</p>
+average (throw out highest and lowest): 23940900</p>
 
 </div>
 </div>
@@ -707,8 +707,8 @@ Except in merge sort, most of the work is done during the merging of the sub-arr
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Total time: 15090708 nanoseconds
-Comparisons: 55231
+<pre>Total time: 24747875 nanoseconds
+Comparisons: 55270
 Swaps: 61808
 </pre>
 </div>
@@ -724,7 +724,7 @@ Swaps: 61808
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>12 times: 13142708 15338583 13292792 12895541 14663292 14833125 14769292 12804833 16318958 12847708 14018666 13988792 <br>
-average (throw out highest and lowest):</p>
+average (throw out highest and lowest): 13979000</p>
 
 </div>
 </div>
@@ -805,7 +805,7 @@ Best case: O(nlogn). We are dividing the array into two sub-arrays recursively, 
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Total time: 19647416 nanoseconds
+<pre>Total time: 32851917 nanoseconds
 Comparisons: 12497500
 Swaps: 5000
 </pre>
@@ -822,7 +822,7 @@ Swaps: 5000
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>12 times: 18416625 24675583 19899291 18860458 20516875 25488542 19593875 21603375 20720833 20482000 18509000 18327583 <br>
-average (throw out highest and lowest):</p>
+average (throw out highest and lowest): 18276114</p>
 
 </div>
 </div>
@@ -901,9 +901,9 @@ Best case: O(n²). Even if the array has already been sorted, our algorithm look
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Total time: 15723167 nanoseconds
-Comparisons: 6212144
-Swaps: 6212144
+<pre>Total time: 29338708 nanoseconds
+Comparisons: 6191603
+Swaps: 6191603
 </pre>
 </div>
 </div>
@@ -918,7 +918,7 @@ Swaps: 6212144
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>12 times: 16628125 25556083 16362125 18691042 20512375 15466167 16299208 16018667 19741208 18525333 16624042 16343375 <br>
-average (throw out highest and lowest):</p>
+average (throw out highest and lowest): 17519300</p>
 
 </div>
 </div>
@@ -929,6 +929,18 @@ average (throw out highest and lowest):</p>
 <p>Time complexity:</p>
 <p>Worst case: O(n²). In a worst case situation, our array is sorted in descending order. So, for each element, we have to keep traversing and swapping elements to the left. <br>
 Best case: O(n). In the best case, our array is already sorted. So for each element, we compare our current element to the element at the left only once. Since the order is correct, we don’t swap and move on to the next element. Hence the time complexity will be O(n).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>merge sort - 13979000<br>
+insertion sort - 17519300<br>
+selection sort - 18276114<br>
+bubble sort - 23940900<br></p>
+<p>Best sort: merge sort</p>
 
 </div>
 </div>

@@ -112,9 +112,17 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#Bubble-Sort">Bubble Sort </a></li>
 <li class="toc-entry toc-h3"><a href="#Merge-Sort">Merge Sort </a></li>
 <li class="toc-entry toc-h3"><a href="#Selection-Sort">Selection Sort </a></li>
-<li class="toc-entry toc-h3"><a href="#Insertion-Sort">Insertion Sort </a></li>
+<li class="toc-entry toc-h3"><a href="#Insertion-Sort">Insertion Sort </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Comparison/Analysis">Comparison/Analysis </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h3"><a href="#Binary-Search">Binary Search </a></li>
-<li class="toc-entry toc-h3"><a href="#Hashmap-Lookup">Hashmap Lookup </a></li>
+<li class="toc-entry toc-h3"><a href="#Hashmap-Lookup">Hashmap Lookup </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Comprison/Analysis">Comprison/Analysis </a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul><!--
@@ -360,8 +368,8 @@ Red Velvet
 Strawberry
 Vanilla
 
-Number of swaps: 72
-Number of comparisons: 132
+Number of swaps: 126
+Number of comparisons: 231
 </pre>
 </div>
 </div>
@@ -574,9 +582,9 @@ O(n^2), O(2^n) and O(n!) - Horrible/Worst<br></p>
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Total time: 60835458 nanoseconds
-Comparisons: 12489750
-Swaps: 6203385
+<pre>Total time: 62429916 nanoseconds
+Comparisons: 12493129
+Swaps: 6217022
 </pre>
 </div>
 </div>
@@ -709,8 +717,8 @@ Except in merge sort, most of the work is done during the merging of the sub-arr
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Total time: 25949667 nanoseconds
-Comparisons: 55212
+<pre>Total time: 53071042 nanoseconds
+Comparisons: 55216
 Swaps: 61808
 </pre>
 </div>
@@ -807,7 +815,7 @@ Best case: O(nlogn). We are dividing the array into two sub-arrays recursively, 
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Total time: 41246167 nanoseconds
+<pre>Total time: 51802750 nanoseconds
 Comparisons: 12497500
 Swaps: 5000
 </pre>
@@ -903,9 +911,9 @@ Best case: O(n²). Even if the array has already been sorted, our algorithm look
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Total time: 39268500 nanoseconds
-Comparisons: 6203385
-Swaps: 6203385
+<pre>Total time: 37626917 nanoseconds
+Comparisons: 6217022
+Swaps: 6217022
 </pre>
 </div>
 </div>
@@ -938,7 +946,11 @@ Best case: O(n). In the best case, our array is already sorted. So for each elem
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>merge sort - 13979000<br>
+<h4 id="Comparison/Analysis">
+<a class="anchor" href="#Comparison/Analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comparison/Analysis<a class="anchor-link" href="#Comparison/Analysis"> </a>
+</h4>
+<p><br>
+merge sort - 13979000<br>
 insertion sort - 17519300<br>
 selection sort - 18276114<br>
 bubble sort - 23940900<br></p>
@@ -970,9 +982,10 @@ time complexity - O(log n)</p>
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Random</span><span class="p">;</span>
 
+<span class="c1">//randomKey method</span>
 <span class="kt">int</span><span class="o">[]</span> <span class="n">randomKey</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">100</span><span class="o">]</span><span class="p">;</span> <span class="c1">//int array of 100 keys</span>
 <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">100</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-   <span class="kt">int</span> <span class="n">randomNum</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span><span class="o">*</span><span class="mi">1000</span><span class="p">);</span> <span class="c1">//randomly generate 0-1000</span>
+   <span class="kt">int</span> <span class="n">randomNum</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span><span class="o">*</span><span class="mi">5000</span><span class="p">);</span> <span class="c1">//randomly generate 0-5000</span>
    <span class="n">randomKey</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">randomNum</span><span class="p">;</span> <span class="c1">//sort in randomKey array</span>
 <span class="p">}</span>
 
@@ -1020,7 +1033,7 @@ time complexity - O(log n)</p>
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Total time: 36175458 nanoseconds
+<pre>Total time: 43645375 nanoseconds
 </pre>
 </div>
 </div>
@@ -1068,18 +1081,67 @@ The worst-case scenario could be the values at either extremity of the list or v
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.HashMap</span><span class="p">;</span>
 
-<span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">foodIds</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span> <span class="c1">//declare hashmap, key/value type have to java wrapper classes, not primitive types</span>
+<span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="p">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">hashmap</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span> <span class="c1">//declare hashmap, key/value type have to java wrapper classes, not primitive types</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">5000</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="n">hashmap</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span> <span class="c1">//add 5000 key value pairs in hashmap </span>
+<span class="p">}</span>
 
-<span class="n">foodIds</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">"ramen"</span><span class="p">,</span> <span class="mi">12345</span><span class="p">);</span>
+
+<span class="c1">//calculate total time</span>
+<span class="kt">long</span> <span class="n">start</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">100</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>  <span class="c1">//search 100 times, find 100 keys in 5000 records</span>
+    <span class="n">hashmap</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">randomKey</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">long</span> <span class="n">end</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
+<span class="kt">long</span> <span class="n">timeElapsed</span> <span class="o">=</span> <span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">;</span>
+
+<span class="c1">//total time</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Total time: "</span> <span class="o">+</span> <span class="n">timeElapsed</span> <span class="o">+</span> <span class="s">" nanoseconds"</span><span class="p">);</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Total time: 32205166 nanoseconds
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>12 times: 29524917 26524416 38187625 35060125 38538542 49850750 39018792 35456125 29634542 32697208 29407792 26733166 <br>
+average (throw out highest and lowest): 33637500</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Comprison/Analysis">
+<a class="anchor" href="#Comprison/Analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comprison/Analysis<a class="anchor-link" href="#Comprison/Analysis"> </a>
+</h4>
+<p>binary search - 34347800<br>
+hashmap lookup - 33637500<br></p>
+<p>The performance is the same. However, in the average case scenario, hash lookup is significantly faster than binary search. In real applications, we mainly consider an average case scenario in order to test and compare the performance of different methods</p>
+
+</div>
+</div>
+</div>
 </div>
 
 

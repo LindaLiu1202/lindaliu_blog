@@ -283,25 +283,6 @@ window.onload = wrap_img;
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Scarlet Letter
-Animal Farm
-12345
-24680
-2
-2
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -354,11 +335,13 @@ Animal Farm
     <span class="kd">private</span> <span class="n">String</span> <span class="n">title</span><span class="p">;</span>
     <span class="kd">private</span> <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
     <span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">SID</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">//static (not an instance variable) - a class variable</span>
+    <span class="kd">private</span> <span class="kt">long</span> <span class="n">enterTime</span><span class="p">;</span> 
     
         <span class="kd">public</span> <span class="nf">Book</span><span class="p">(</span><span class="n">String</span> <span class="n">title</span><span class="p">){</span> <span class="c1">//one argument constructor</span>
         <span class="k">this</span><span class="p">.</span><span class="na">title</span> <span class="o">=</span> <span class="n">title</span><span class="p">;</span>
         <span class="k">this</span><span class="p">.</span><span class="na">id</span> <span class="o">=</span> <span class="n">SID</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> 
         <span class="n">SID</span><span class="o">++</span><span class="p">;</span> 
+        <span class="k">this</span><span class="p">.</span><span class="na">enterTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span> <span class="c1">//add a time when book entered the library using nanoTime()</span>
         <span class="p">}</span>
     
         <span class="kd">public</span> <span class="n">String</span> <span class="nf">getTitle</span><span class="p">(){</span>
@@ -367,6 +350,10 @@ Animal Farm
 
         <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getID</span><span class="p">(){</span>
             <span class="k">return</span> <span class="n">id</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kd">public</span> <span class="kt">long</span> <span class="nf">getTime</span><span class="p">(){</span>
+            <span class="k">return</span> <span class="n">enterTime</span><span class="p">;</span>
         <span class="p">}</span>
     
         <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">(){</span>
@@ -461,12 +448,18 @@ book count: 2
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Novel</span> <span class="kd">extends</span> <span class="n">Book</span> <span class="p">{</span> <span class="c1">//extends Book class</span>
+<div class=" highlight hl-java"><pre><span></span><span class="c1">//subclass Novel</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Novel</span> <span class="kd">extends</span> <span class="n">Book</span> <span class="p">{</span> <span class="c1">//extends Book class</span>
+
     <span class="kd">private</span> <span class="n">String</span> <span class="n">author</span><span class="p">;</span>
+    <span class="c1">//private long enterTime;</span>
+    <span class="c1">//(moved to Book class)</span>
     
-        <span class="kd">public</span> <span class="nf">Novel</span><span class="p">(</span><span class="n">String</span> <span class="n">title</span><span class="p">,</span> <span class="n">String</span> <span class="n">author</span><span class="p">){</span>
+        <span class="kd">public</span> <span class="nf">Novel</span><span class="p">(</span><span class="n">String</span> <span class="n">title</span><span class="p">){</span>
             <span class="kd">super</span><span class="p">(</span><span class="n">title</span><span class="p">);</span>  <span class="c1">//call superclass constructor with parameter title using super()</span>
             <span class="k">this</span><span class="p">.</span><span class="na">author</span> <span class="o">=</span> <span class="n">author</span><span class="p">;</span>
+         <span class="c1">//this.enterTime = System.nanoTime(); //add a time when book entered the library using nanoTime()</span>
+         <span class="c1">//(moved to Book class)</span>
         <span class="p">}</span>
     
         <span class="c1">//new getters and setters</span>
@@ -475,24 +468,53 @@ book count: 2
         <span class="p">}</span>
     
         <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setAuthor</span><span class="p">(</span><span class="n">String</span> <span class="n">str</span><span class="p">){</span>
-            <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">str</span><span class="p">;</span>
+            <span class="k">this</span><span class="p">.</span><span class="na">author</span> <span class="o">=</span> <span class="n">str</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="c1">//toString method</span>
+        <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="kd">super</span><span class="p">.</span><span class="na">toString</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot;Author: &quot;</span> <span class="o">+</span> <span class="n">getAuthor</span><span class="p">();</span> <span class="c1">//use Book class toString method through super.toString()</span>
         <span class="p">}</span>
     
         <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
+        <span class="n">Novel</span> <span class="n">novel1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Novel</span><span class="p">(</span><span class="s">&quot;novel1&quot;</span><span class="p">);</span>
+        <span class="n">novel1</span><span class="p">.</span><span class="na">setAuthor</span><span class="p">(</span><span class="s">&quot;people1&quot;</span><span class="p">);</span> <span class="c1">//set author name</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;novel 1 author: &quot;</span> <span class="o">+</span> <span class="n">novel1</span><span class="p">.</span><span class="na">getAuthor</span><span class="p">());</span>
+        <span class="n">Novel</span> <span class="n">novel2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Novel</span><span class="p">(</span><span class="s">&quot;novel2&quot;</span><span class="p">);</span>
+        <span class="n">novel2</span><span class="p">.</span><span class="na">setAuthor</span><span class="p">(</span><span class="s">&quot;people2&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;novel 2 author: &quot;</span> <span class="o">+</span> <span class="n">novel2</span><span class="p">.</span><span class="na">getAuthor</span><span class="p">());</span>
 
-        <span class="c1">//try to add a time when book entered the library using nanoTime() but it does not seem right and also it is not the same for Parent and Subclasses, should it not be in test method? </span>
-            <span class="kt">long</span> <span class="n">enter</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;novel 1 title: &quot;</span> <span class="o">+</span> <span class="n">novel1</span><span class="p">.</span><span class="na">getTitle</span><span class="p">());</span> <span class="c1">//can also use superclass method</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;novel 1 enter time: &quot;</span> <span class="o">+</span> <span class="n">novel1</span><span class="p">.</span><span class="na">getTime</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; nanoseconds&quot;</span><span class="p">);</span> <span class="c1">//get enter time</span>
 
-            
-
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;novel 2 title: &quot;</span> <span class="o">+</span> <span class="n">novel2</span><span class="p">.</span><span class="na">getTitle</span><span class="p">());</span>  
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;novel 2 enter time: &quot;</span> <span class="o">+</span> <span class="n">novel2</span><span class="p">.</span><span class="na">getTime</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; nanoseconds&quot;</span><span class="p">);</span>  <span class="c1">//but is different novel having different time? </span>
         <span class="p">}</span>
-    
-        
-    
     <span class="p">}</span>
+
+<span class="n">Novel</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>novel 1 author: people1
+novel 2 author: people2
+novel 1 title: novel1
+novel 1 enter time: 5649239124000 nanoseconds
+novel 2 title: novel2
+novel 2 enter time: 5649239369875 nanoseconds
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 

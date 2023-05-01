@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      8 min read
     
 </span></p>
 
@@ -283,6 +283,25 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Scarlet Letter
+Animal Farm
+12345
+24680
+2
+2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -338,10 +357,9 @@ window.onload = wrap_img;
     <span class="kd">private</span> <span class="kt">long</span> <span class="n">enterTime</span><span class="p">;</span> 
     
         <span class="kd">public</span> <span class="nf">Book</span><span class="p">(</span><span class="n">String</span> <span class="n">title</span><span class="p">){</span> <span class="c1">//one argument constructor</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">title</span> <span class="o">=</span> <span class="n">title</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">id</span> <span class="o">=</span> <span class="n">SID</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> 
-        <span class="n">SID</span><span class="o">++</span><span class="p">;</span> 
-        <span class="k">this</span><span class="p">.</span><span class="na">enterTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span> <span class="c1">//add a time when book entered the library using nanoTime()</span>
+            <span class="k">this</span><span class="p">.</span><span class="na">title</span> <span class="o">=</span> <span class="n">title</span><span class="p">;</span>
+            <span class="k">this</span><span class="p">.</span><span class="na">id</span> <span class="o">=</span> <span class="o">++</span><span class="n">SID</span><span class="p">;</span> 
+            <span class="k">this</span><span class="p">.</span><span class="na">enterTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span> <span class="c1">//add a time when book entered the library using nanoTime()</span>
         <span class="p">}</span>
     
         <span class="kd">public</span> <span class="n">String</span> <span class="nf">getTitle</span><span class="p">(){</span>
@@ -521,6 +539,71 @@ novel 2 enter time: 5649239369875 nanoseconds
 </div>
     
 
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Textbook</span> <span class="kd">extends</span> <span class="n">Book</span> <span class="p">{</span> <span class="c1">//extends Book class</span>
+
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">company</span><span class="p">;</span>
+    <span class="c1">//private long enterTime;</span>
+    <span class="c1">//(moved to Book class)</span>
+    
+        <span class="kd">public</span> <span class="nf">Textbook</span><span class="p">(</span><span class="n">String</span> <span class="n">title</span><span class="p">){</span>
+            <span class="kd">super</span><span class="p">(</span><span class="n">title</span><span class="p">);</span>  <span class="c1">//call superclass constructor with parameter title using super()</span>
+            <span class="k">this</span><span class="p">.</span><span class="na">company</span> <span class="o">=</span> <span class="n">company</span><span class="p">;</span>
+         <span class="c1">//this.enterTime = System.nanoTime(); //add a time when book entered the library using nanoTime()</span>
+         <span class="c1">//(moved to Book class)</span>
+        <span class="p">}</span>
+    
+        <span class="c1">//new getters and setters</span>
+        <span class="kd">public</span> <span class="n">String</span> <span class="nf">getCompany</span><span class="p">(){</span> 
+            <span class="k">return</span> <span class="n">company</span><span class="p">;</span>
+        <span class="p">}</span>
+    
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setCompany</span><span class="p">(</span><span class="n">String</span> <span class="n">str</span><span class="p">){</span>
+            <span class="k">this</span><span class="p">.</span><span class="na">company</span> <span class="o">=</span> <span class="n">str</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="c1">//toString method</span>
+        <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="kd">super</span><span class="p">.</span><span class="na">toString</span><span class="p">()</span> <span class="o">+</span> <span class="n">getCompany</span><span class="p">();</span> <span class="c1">//use Book class toString method through super.toString()</span>
+        <span class="p">}</span>
+    
+        <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
+        <span class="n">Textbook</span> <span class="n">textbook1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Textbook</span><span class="p">(</span><span class="s">&quot;textbook&quot;</span><span class="p">);</span>
+        <span class="n">textbook1</span><span class="p">.</span><span class="na">setCompany</span><span class="p">(</span><span class="s">&quot;company1&quot;</span><span class="p">);</span> <span class="c1">//set author name</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;company 1 name: &quot;</span> <span class="o">+</span> <span class="n">textbook1</span><span class="p">.</span><span class="na">getCompany</span><span class="p">());</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+<span class="n">Textbook</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>company 1 name: company1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Part-3">Part 3<a class="anchor-link" href="#Part-3"> </a></h2><h3 id="Simulation-(Part-3)">Simulation (Part 3)<a class="anchor-link" href="#Simulation-(Part-3)"> </a></h3><ol>
@@ -541,6 +624,94 @@ novel 2 enter time: 5649239369875 nanoseconds
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Book</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">title</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">SID</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">//static (not an instance variable) - a class variable</span>
+    <span class="kd">private</span> <span class="kt">long</span> <span class="n">currentShelfLife</span><span class="p">;</span> 
+    
+        <span class="kd">public</span> <span class="nf">Book</span><span class="p">(</span><span class="n">String</span> <span class="n">title</span><span class="p">){</span> <span class="c1">//one argument constructor</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">title</span> <span class="o">=</span> <span class="n">title</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">id</span> <span class="o">=</span> <span class="n">SID</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> 
+        <span class="n">SID</span><span class="o">++</span><span class="p">;</span> 
+        <span class="k">this</span><span class="p">.</span><span class="na">currentShelfLife</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span> <span class="c1">//add a time when book entered the library using nanoTime()</span>
+        <span class="p">}</span>
+    
+        <span class="kd">public</span> <span class="n">String</span> <span class="nf">getTitle</span><span class="p">(){</span>
+            <span class="k">return</span> <span class="n">title</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getID</span><span class="p">(){</span>
+            <span class="k">return</span> <span class="n">id</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kd">public</span> <span class="kt">long</span> <span class="nf">getCurrentShelfLife</span><span class="p">(){</span>
+            <span class="k">return</span> <span class="n">currentShelfLife</span><span class="p">;</span>
+        <span class="p">}</span>
+    
+        <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">(){</span>
+            <span class="k">return</span> <span class="n">getTitle</span><span class="p">()</span> <span class="o">+</span> <span class="n">getID</span><span class="p">()</span> <span class="o">+</span> <span class="n">getCurrentShelfLife</span><span class="p">();</span>
+        <span class="p">}</span>
+    
+        <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">getCount</span><span class="p">(){</span>
+            <span class="k">return</span> <span class="n">SID</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kd">public</span> <span class="kt">int</span> <span class="nf">extendShelfLife</span><span class="p">(){</span>
+            
+        <span class="p">}</span>
+    
+        <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
+
+        
+
+        <span class="p">}</span>
+    <span class="p">}</span>
+    
+    <span class="n">Book</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">//broke - remove book from library</span>
+
+<span class="c1">//extend shelflife()</span>
+    <span class="c1">//nano.Time - shelflife</span>
+
+    <span class="c1">//Thread.sleep() - some time to decrease power</span>
+
+    <span class="c1">//random generate a num between 0-5; 3 checkouts renews for an extra year/full power</span>
+
+    <span class="c1">//if (shelflife &lt;= 0)</span>
+    <span class="c1">//broke</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 

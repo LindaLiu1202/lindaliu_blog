@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      10 min read
     
 </span></p>
 
@@ -199,34 +199,6 @@ window.onload = wrap_img;
 
 <span class="c1">//when using method, beaware of the input parameter</span>
 <span class="c1">//is the method static or not (are we suppose to use classObject.method())</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="program">program<a class="anchor-link" href="#program"> </a></h3>
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">//helper method code</span>
-
-
-
-
-<span class="c1">//program</span>
 </pre></div>
 
     </div>
@@ -526,6 +498,215 @@ getDigit returns the nth digit of its int parameter.</p>
 
 <pre><code>- int multiplier
 - int total/sum</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2dArray-#2">2dArray #2<a class="anchor-link" href="#2dArray-#2"> </a></h2><p>getName
+getValue</p>
+<p>(a)   Write the mostValuableNeighbor method, which compares the item in row r and column c to the items to its left and to its right. The method determines which of the three items has the greatest value and returns its name. If more than one of the values have a value that is greatest, then any of their names can be returned. If the item has no item to its left, it is compared only to the item to its right. If the item has no item to its right, it is compared only to the item to its left.</p>
+<p>The helper method isValid has been provided. The isValid method returns true if xPos is a valid row index and yPos is a valid column index in the two-dimensional array grid, and returns false otherwise.</p>
+<p>Assume that the ItemGrid object ig has been created such that the two-dimensional array grid contains the following item objects.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="cm">/** Compares the item in row r and column c to the items to its</span>
+
+<span class="cm">* left and to its right. Returns the name of the item with</span>
+
+<span class="cm">* the greatest value, as described in part (a).</span>
+
+<span class="cm">* Precondition: r and c are valid indices</span>
+
+<span class="cm">*/</span>
+
+<span class="c1">//getName &amp; getValue</span>
+
+<span class="kd">public</span> <span class="n">String</span> <span class="nf">mostValuableNeighbor</span><span class="p">(</span><span class="kt">int</span> <span class="n">r</span><span class="p">,</span> <span class="kt">int</span> <span class="n">c</span><span class="p">){</span>
+<span class="kt">int</span> <span class="n">maxVal</span> <span class="o">=</span> <span class="n">ig</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">]</span><span class="p">.</span><span class="na">getValue</span><span class="p">();</span>
+<span class="kt">int</span> <span class="n">leftVal</span> <span class="o">=</span> <span class="n">ig</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span><span class="p">.</span><span class="na">getValue</span><span class="p">();</span>
+<span class="kt">int</span> <span class="n">rightVal</span> <span class="o">=</span> <span class="n">ig</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">+</span><span class="mi">1</span><span class="o">]</span><span class="p">.</span><span class="na">getValue</span><span class="p">();</span>
+
+<span class="k">if</span><span class="p">(</span><span class="n">isValid</span><span class="p">(</span><span class="n">ig</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span><span class="p">)){</span>
+    <span class="c1">//if left is valid</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">leftVal</span> <span class="o">&gt;=</span> <span class="n">maxVal</span><span class="p">){</span>
+        <span class="c1">//if greater than max</span>
+        <span class="c1">//check if right is valid</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">isValid</span><span class="p">(</span><span class="n">ig</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">+</span><span class="mi">1</span><span class="o">]</span><span class="p">)){</span>
+            <span class="c1">//if right is valid</span>
+            <span class="c1">//left is greater than right</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">leftVal</span> <span class="o">&gt;=</span> <span class="n">rightVal</span><span class="p">){</span>
+                <span class="k">return</span> <span class="n">ig</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span><span class="p">.</span><span class="na">getName</span><span class="p">();</span> <span class="c1">//return left</span>
+            <span class="p">}</span>
+            <span class="c1">//if left is less then right with left greater than max</span>
+            <span class="k">return</span> <span class="n">ig</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">+</span><span class="mi">1</span><span class="o">]</span><span class="p">.</span><span class="na">getName</span><span class="p">();</span> <span class="c1">//return right</span>
+        <span class="p">}</span>
+         <span class="c1">//if right is not valid &amp; left is greater than max</span>
+         <span class="k">return</span> <span class="n">ig</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span><span class="p">.</span><span class="na">getName</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="c1">//if left is less than max</span>
+    <span class="c1">//check if right is valid</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">isValid</span><span class="p">(</span><span class="n">ig</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">+</span><span class="mi">1</span><span class="o">]</span><span class="p">)){</span>
+        <span class="c1">//if right is valid</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">rightVal</span> <span class="o">&gt;=</span> <span class="n">maxVal</span><span class="p">){</span>
+            <span class="k">return</span> <span class="n">ig</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">+</span><span class="mi">1</span><span class="o">]</span><span class="p">.</span><span class="na">getName</span><span class="p">();</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">ig</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">]</span><span class="p">.</span><span class="na">getName</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">ig</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">]</span><span class="p">.</span><span class="na">getName</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="p">....</span>
+<span class="o">???????????????????!!!!!!!!!!!!!!!!!!!!!!</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>(b)   Write the findAverage method, which returns the average value of all items in grid. For example, for the ItemGrid object ig shown in part (a), the findAverage method should return 9.5, which is the average value of the twelve items in the 2D array.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kt">double</span> <span class="nf">findAverage</span><span class="p">(){</span>
+<span class="kt">double</span> <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kt">double</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">r</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">r</span><span class="o">&lt;</span><span class="n">ig</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">r</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">c</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">c</span><span class="o">&lt;</span><span class="n">ig</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">c</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">sum</span> <span class="o">+=</span> <span class="n">ig</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">]</span><span class="p">.</span><span class="na">getValue</span><span class="p">();</span>
+            <span class="n">counter</span><span class="o">++</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="kt">double</span> <span class="n">average</span> <span class="o">=</span> <span class="n">sum</span><span class="o">/</span><span class="n">counter</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>can initialize values - give it a name - easier to use</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2d-Array-#3">2d Array #3<a class="anchor-link" href="#2d-Array-#3"> </a></h2><p>(a) Write the method diagonalOp, which returns the sum of the products of the corresponding entries on the main diagonals of two given square 2D arrays that have the same dimensions. The main diagonal goes from the top-left corner to the bottom-right corner in a square 2D array.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="cm">/** Returns an integer, as described in part (a).</span>
+
+<span class="cm">* Precondition: matA and matB are 2D arrays that are both square,</span>
+
+<span class="cm">* have at least one row, and have the same dimensions.</span>
+
+<span class="cm">*/</span>
+
+<span class="c1">//return int sum of products of the diagonals of the two 2d array</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">diagonalOp</span><span class="p">(</span><span class="kt">int</span><span class="o">[][]</span> <span class="n">matA</span><span class="p">,</span> <span class="kt">int</span><span class="o">[][]</span> <span class="n">matB</span><span class="p">){</span>
+<span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">r</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">r</span><span class="o">&lt;</span><span class="n">mat1</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">r</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">c</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">c</span><span class="o">&lt;</span><span class="n">mat</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">c</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">=</span> <span class="n">c</span><span class="p">){</span> <span class="c1">//diagonal -&gt; r = c</span>
+                <span class="n">sum</span> <span class="o">+=</span> <span class="n">mat1</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">]</span> <span class="o">+</span> <span class="n">mat2</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">]</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">sum</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>(b) Write the method expandMatrix, which returns an expanded version of a given 2D array. To expand a 2D array, a new 2D array must be created and filled with values such that each element of the original 2D array occurs a total of four times in the new 2D array, arranged as shown in the example below.</p>
+<p>returns an expanded version of a given 2D array
+element of the original 2D array occurs a total of four times in the new 2D array</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="cm">/** Returns a 2D array, as described in part (b).</span>
+
+<span class="cm">* Precondition: matA is a 2D array with at least one row and</span>
+
+<span class="cm">* at least one column.</span>
+
+<span class="cm">*/</span>
+
+<span class="c1">//row length * 2 &amp; column length *2</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span><span class="o">[][]</span> <span class="nf">expandMatrix</span><span class="p">(</span><span class="kt">int</span><span class="o">[][]</span> <span class="n">matA</span><span class="p">){</span>
+    
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
 
 </div>
 </div>
